@@ -1,0 +1,52 @@
+SCANT3R TOOL
+
+Scant3r is a open source Web Security Scanner. 
+Scanning can be done in both manual as well as automated. So automated testing is a good approach to be followed. 
+Scant3rR is an automated tool developed in the python language which tests the target domain for various types of vulnerabilities or flaws like XSS, Injection, LFI, etc. 
+The tool contains various modules which can be used in the scanning process.
+ 
+
+Installation Steps on Kali Linux:
+Step 1: Check whether Python Environment is Established or not, use the following command.
+Python3
+Step 2: Open up your Kali Linux terminal and move to Desktop using the following command.
+Cd desktop
+Step 3: You are on Desktop now create a new directory called Scant3R using the following command. In this directory, we will complete the installation of the Scant3R tool.
+mkdir Scant3R 
+
+Step 4: Now switch to the Scant3R directory using the following command.
+cd Scant3R 
+
+Step 5: Now you have to install the tool. You have to clone the tool from GitHub.
+git clone https://github.com/knassar702/scant3r.git
+
+Step 6: The tool has been downloaded successfully in the Scant3R directory. Now list out the contents of the tool by using the below command.
+Ls
+Step 7: You can observe that there is a new directory created of the Scant3R tool that has been generated while we were installing the tool. Now move to that directory using the below command:
+cd scant3r 
+Step 8: Once again to discover the contents of the tool, use the below command.
+ls
+
+Step 9: Download the required packages for running the tool, use the following command.
+pip3 install -r requirements.txt
+
+ 
+Step 10: Now we are done with our installation, Use the below command to view the help (gives a better understanding of the tool) index of the tool.
+python3 scant3r -h
+
+How to perform a normal scan:
+
+echo “http://testphp.vulnweb.com/search.php?test=query&searchFor=1&goButton=go” | python3 scant3r
+
+ 
+
+
+
+
+
+REFERENCES:
+1.	https://www.geeksforgeeks.org/scant3r-web-security-scanner/
+2.	https://github.com/knassar702/scant3r
+
+
+
